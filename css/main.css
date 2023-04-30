@@ -21,6 +21,7 @@
   --mainBorderColor: var(--mainBorderColor-light);
   --mainBackgroundColor: var(--mainBackgroundColor-light);
   --mainButtonBackgroundColor: var(--mainButtonBackgroundColor-light);
+  --mainTransition: all 0.3s ease-in-out 0s;
 }
 
 *,
@@ -113,7 +114,7 @@ a {
   background-color: var(--secondaryTextColor);
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+  transition: var(--mainTransition);
 }
 
 .navbar__links-item a:hover::before {
@@ -175,6 +176,8 @@ a {
   width: 12.5em;
   height: 12.5em;
   margin-right: 1em;
+  border-radius: 50%;
+  border: 2px solid var(--secondaryTextColor);
 }
 
 .about__content {
@@ -203,20 +206,88 @@ a {
   text-transform: capitalize;
 }
 
-/* MODIFIER CLASS */
-.btn--main {
+/* WORK SECTION */
+.work {
+  margin: 4em 0;
+}
+
+.work__container {
+}
+
+.work__title {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work__item {
+  width: calc(33.33% - 20px);
+  border: 2px solid #ff8da7;
+  border-radius: 5px;
   position: relative;
-  overflow: hidden;
-  display: inline-block;
-  color: #fff;
-  background-color: var(--mainButtonBackgroundColor);
-  padding: 1em;
+}
+
+.work__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+}
+
+.work__info {
+  padding: 1.25em;
+}
+
+.work__name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.work__description {
+  font-size: 1em;
+  margin-bottom: 60px;
+}
+
+.work__link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* MODIFIER CLASS */
+
+.btn {
   font-weight: bold;
   text-transform: capitalize;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: var(--mainTransition);
+}
+
+.btn--main {
+  display: inline-block;
+  color: #fff;
+  background-color: var(--mainButtonBackgroundColor);
+  padding: 1em 2em;
 }
 
 .btn--main:hover {
   background-color: #a60027;
+}
+
+.btn--secondary {
+  font-size: 0.75em;
+  display: inline-block;
+  color: var(--secondaryTextColor);
+  border: 2px solid var(--mainButtonBackgroundColor);
+  background-color: transparent;
+  padding: 0.625em 1.625em;
+}
+
+.btn--secondary:hover {
+  background-color: rgba(255, 141, 167, 0.4);
 }
