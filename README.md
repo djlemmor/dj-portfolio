@@ -32,7 +32,7 @@ The following technologies were used to build this website:
 
 ## Usage
 
-1. Open this link in a web browser to view the website.
+1. Open this [link](https://djlemmor.github.io/dj-portfolio/) in a web browser to view the website.
 2. Click on the links in the navigation bar to explore different sections of the website.
 3. View the portfolio projects by clicking on their respective links.
 4. Use the contact form to send me a message.

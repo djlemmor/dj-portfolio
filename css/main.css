@@ -76,26 +76,7 @@ a {
 }
 
 .navbar__letter {
-  display: inline-block;
-  transform: scaleX(-1);
-  position: relative;
-  transition: all 0.3s ease-in-out 0s;
   color: var(--secondaryTextColor);
-}
-
-.navbar__logo:hover .navbar__letter {
-  transform: scaleX(1);
-}
-
-.navbar__letter--j {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  color: var(--secondaryTextColor);
-}
-
-.navbar__logo:hover .navbar__letter--j {
-  position: relative;
 }
 
 .navbar__links {
@@ -140,7 +121,7 @@ a {
   transform: scaleX(1);
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
 }
 
@@ -177,6 +158,49 @@ a {
 }
 
 .hero__button:hover {
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 3em 0;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.125em;
+}
+
+.about__image {
+  width: 12.5em;
+  height: 12.5em;
+  margin-right: 1em;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__description {
+  overflow: hidden;
+}
+
+.about__image {
+  float: left;
+}
+
+.about__details {
+  flex: 1;
+}
+
+.about__paragraph {
+}
+
+.about__paragraph-heading {
+  color: var(--secondaryTextColor);
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 /* MODIFIER CLASS */
