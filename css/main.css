@@ -35,6 +35,7 @@
 html {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -47,10 +48,15 @@ a {
   font-weight: 500;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .container-fluid {
@@ -59,7 +65,7 @@ a {
 
 /* NAVBAR */
 .navbar {
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 
 .nav__container {
@@ -70,7 +76,7 @@ a {
 .navbar__logo {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 0.5rem 0.5rem 0.5rem 0;
   color: red;
@@ -88,7 +94,7 @@ a {
 }
 
 .navbar__links-item {
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .navbar__links-item:last-child {
@@ -123,7 +129,7 @@ a {
 
 /* HERO SECTION */
 .hero {
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 
 .hero__container {
@@ -149,17 +155,17 @@ a {
 }
 
 .hero__title-name {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   display: inline-block;
   color: var(--secondaryTextColor);
 }
 
 .hero__subtitle {
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 
 .hero__button {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .hero__button:hover {
@@ -167,22 +173,20 @@ a {
 
 /* ABOUT SECTION */
 .about {
-  padding: 6em 0;
+  padding: 6rem 0;
   line-height: 1.8;
+}
+
+.about__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .about__container {
   display: flex;
   justify-content: space-between;
-  gap: 3.125em;
-}
-
-.about__image {
-  width: 12.5em;
-  height: 12.5em;
-  margin-right: 1em;
-  border-radius: 50%;
-  border: 2px solid var(--secondaryTextColor);
+  gap: 3.125rem;
 }
 
 .about__content {
@@ -194,6 +198,11 @@ a {
 }
 
 .about__image {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--secondaryTextColor);
   float: left;
 }
 
@@ -202,35 +211,35 @@ a {
 }
 
 .about__paragraph {
-  margin: 1em 0;
-  font-size: 1.125em;
+  margin: 1rem 0;
+  font-size: 1.125rem;
 }
 
 .about__paragraph-heading {
   color: var(--secondaryTextColor);
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: bold;
   text-transform: capitalize;
 }
 
 /* WORK SECTION */
 .work {
-  margin: 6em 0;
+  padding: 6rem 0;
+}
+
+.work__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .work__container {
 }
 
-.work__title {
-  font-size: 2.25em;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
 .work__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .work__item {
@@ -243,37 +252,85 @@ a {
 .work__image {
   object-fit: cover;
   max-width: 33.33%;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .work__info {
-  padding: 1em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .work__company {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: var(--secondaryTextColor);
 }
 
 .work__position {
-  font-size: 1.2em;
-  margin: 0.2em 0;
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
 }
 
 .work__date {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .work__description {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .work__link {
   align-self: end;
 }
 
+/* PROJECTS SECTION */
+.projects {
+  padding: 6rem 0;
+}
+
+.projects__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.875rem;
+}
+
+.projects__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.project {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+}
+
+.project__info {
+  padding: 1rem;
+}
+
+.project__name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project__description {
+  margin-bottom: 1rem;
+}
+
+.project__link {
+}
+
+/* FOOTER SECTION */
+footer {
+  text-align: center;
+}
 /* MODIFIER CLASS */
 
 .btn {
@@ -287,7 +344,7 @@ a {
   display: inline-block;
   color: #fff;
   background-color: var(--mainButtonBackgroundColor);
-  padding: 1em 2em;
+  padding: 1rem 2rem;
 }
 
 .btn--main:hover {
@@ -295,12 +352,12 @@ a {
 }
 
 .btn--secondary {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   display: inline-block;
   color: var(--secondaryTextColor);
   border: 2px solid var(--mainButtonBackgroundColor);
   background-color: transparent;
-  padding: 0.625em 1.625em;
+  padding: 1rem 1.625rem;
 }
 
 .btn--secondary:hover {
