@@ -10,7 +10,7 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="nav__container container">
+      <div class="navbar__container container">
         <a href="#" class="navbar__logo">
           <span class="navbar__letter">DJ</span>
         </a>
@@ -19,10 +19,32 @@
           <li class="navbar__links-item"><a href="#about">About</a></li>
           <li class="navbar__links-item"><a href="#work">Work</a></li>
           <li class="navbar__links-item"><a href="#projects">Projects</a></li>
-          <li class="navbar__links-item"><a href="#services">Services</a></li>
+          <li class="navbar__links-item"><a href="#contact">Contact</a></li>
         </ul>
+        <div class="navbar__hamburger" onclick="toggleMenu()">
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+        </div>
       </div>
     </nav>
+
+    <!-- MOBILE NAVBAR -->
+    <aside class="mobile__menu">
+      <nav class="mobile__nav">
+        <ul class="mobile__links">
+          <li class="mobile__links-item"><a href="#">Home</a></li>
+          <li class="mobile__links-item"><a href="#about">About</a></li>
+          <li class="mobile__links-item"><a href="#work">Work</a></li>
+          <li class="mobile__links-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="mobile__links-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
     <!-- MAIN -->
     <main>
@@ -30,13 +52,13 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__intro">
-            <h1 class="hero__title">
-              Hi, I'm <span class="hero__title-name"> DJ Lemmor Nuique</span>
-            </h1>
+            <h1 class="hero__title">Hi, I'm DJ Lemmor Nuique</h1>
             <p class="hero__subtitle">
               I'm a Junior Web Developer based in the Philippines.
             </p>
-            <a href="#work" class="hero__button btn btn--main">View my work</a>
+            <a href="#work" class="hero__button btn btn--primary"
+              >View Work History</a
+            >
           </div>
           <div class="hero__image">
             <img
@@ -51,7 +73,7 @@
       <!-- ABOUT SECTION -->
       <section id="about" class="about">
         <div class="container">
-          <h2 class="about__title">ABOUT ME</h2>
+          <h2 class="about__title">&lt;ABOUT ME&gt;</h2>
           <div class="about__container">
             <div class="about__content">
               <div class="about__description">
@@ -116,7 +138,7 @@
       <section id="work" class="work">
         <div class="container">
           <div class="work__container">
-            <h2 class="work__title">WORK HISTORY</h2>
+            <h2 class="work__title">&lt;WORK HISTORY&gt;</h2>
             <div class="work__list">
               <div class="work__item">
                 <img
@@ -125,9 +147,13 @@
                   alt="PV Multimedia"
                 />
                 <div class="work__info">
-                  <h3 class="work__company">PV Multimedia</h3>
-                  <h4 class="work__position">HTML5 Developer</h4>
-                  <h5 class="work__date">September 2017 - July 2021</h5>
+                  <div>
+                    <h3 class="work__company">
+                      PV Multimedia |
+                      <span class="work__position">HTML5 Developer</span>
+                    </h3>
+                  </div>
+                  <h4 class="work__date">September 2017 - July 2021</h4>
                   <p class="work__description">
                     As part of my role, I was responsible for designing, action
                     scripting, and developing E-Learning modules using Adobe
@@ -157,9 +183,14 @@
                   alt="PV Multimedia"
                 />
                 <div class="work__info">
-                  <h3 class="work__company">Jintelcare</h3>
-                  <h4 class="work__position">Junior PHP Developer</h4>
-                  <h5 class="work__date">July 2021 - August 2022</h5>
+                  <div>
+                    <h3 class="work__company">
+                      Jintelcare |
+                      <span class="work__position">Junior PHP Developer</span>
+                    </h3>
+                  </div>
+                  <h4 class="work__date">July 2021 - August 2022</h4>
+
                   <p class="work__description">
                     I have been involved in various projects that encompassed
                     different aspects of web development. In the first project,
@@ -173,8 +204,8 @@
                     an intuitive user interface for administrative tasks. In the
                     third project, I participated in the creation of both the
                     marketplace and the admin dashboard for a website based on a
-                    Figma design. Vue.js and Element Plus, a Vue 3 based
-                    component library, were utilized in this project to bring
+                    Figma design. Vue.js and Element Plus(a Vue 3 based
+                    component library) were utilized in this project to bring
                     the design to life. I converted the Figma design into Vue
                     components, ensuring a faithful representation of the
                     original design while incorporating interactive
@@ -199,9 +230,14 @@
                   alt="VST ECS"
                 />
                 <div class="work__info">
-                  <h3 class="work__company">VST ECS Phils. Inc.</h3>
-                  <h4 class="work__position">Application Developer</h4>
-                  <h5 class="work__date">September 2022 - January 2023</h5>
+                  <div>
+                    <h3 class="work__company">
+                      VST ECS Phils. Inc. |
+                      <span class="work__position">Application Developer</span>
+                    </h3>
+                  </div>
+                  <h4 class="work__date">September 2022 - January 2023</h4>
+
                   <p class="work__description">
                     I was responsible for developing a microservice architecture
                     by creating an API using Laravel framework. This involved
@@ -230,7 +266,7 @@
       <!-- PROJECTS SECTION -->
       <section id="projects" class="projects">
         <div class="container">
-          <h2 class="projects__title">PROJECTS</h2>
+          <h2 class="projects__title">&lt;PROJECTS&gt;</h2>
           <div class="project__container">
             <div class="projects__list">
               <div class="project">
@@ -282,10 +318,6 @@
         help clients.
       </section>
       <section>
-        Testimonials: Include positive feedback from clients or colleagues to
-        provide social proof and build credibility.
-      </section>
-      <section>
         Contact Information: Make it easy for potential clients or employers to
         get in touch with you by including your email, phone number, and social
         media links.
@@ -293,11 +325,6 @@
       <section>
         Resume: You may want to include a downloadable version of your resume
         for potential employers or clients.
-      </section>
-      <section>
-        Blog: If you write about your industry or have relevant insights to
-        share, a blog can be a great way to demonstrate your expertise and build
-        your personal brand.
       </section> -->
     </main>
 

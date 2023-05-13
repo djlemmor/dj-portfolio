@@ -1,34 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
 
 :root {
-  --mainTextColor-light: #000;
-  --secondaryTextColor-light: #ff033e;
-  --mainLinkColor-light: #000;
-  --mainBorderColor-light: rgb(218, 218, 218);
-  --mainBackgroundColor-light: #fbfbfb;
-  --mainButtonBackgroundColor-light: #ff033e;
+  --primary-color-light: rgba(255, 3, 62, 1);
+  --secondary-color-light: rgba(77, 112, 230, 1);
+  --primary-button-light: rgba(255, 3, 62, 0.8);
+  --secondary-button-light: rgba(77, 112, 230, 0.8);
+  --background-color-light: rgba(251, 251, 251, 1);
 
-  --mainTextColor-dark: #fff;
-  --secondaryTextColor-dark: #ff033e;
-  --mainLinkColor-dark: #fff;
-  --mainBorderColor-dark: #2b3031;
-  --mainBackgroundColor-dark: #131415;
-  --mainButtonBackgroundColor-dark: #ff033e;
+  --primary-color-dark: rgba(255, 3, 62, 1);
+  --secondary-color-dark: rgba(77, 112, 230, 1);
+  --primary-button-dark: rgba(255, 3, 62, 0.8);
+  --secondary-button-dark: rgba(77, 112, 230, 0.8);
+  --background-color-dark: rgba(19, 20, 21, 1);
 
-  --mainTextColor: var(--mainTextColor-light);
-  --secondaryTextColor: var(--secondaryTextColor-light);
-  --mainLinkColor: var(--mainLinkColor-light);
-  --mainBorderColor: var(--mainBorderColor-light);
-  --mainBackgroundColor: var(--mainBackgroundColor-light);
-  --mainButtonBackgroundColor: var(--mainButtonBackgroundColor-light);
-  --mainTransition: all 0.3s ease-in-out 0s;
+  --text-white: rgba(255, 255, 255, 1);
+  --text-black: rgba(0, 0, 0, 1);
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+  --primary-button: var(--primary-button-light);
+  --secondary-button: var(--secondary-button-light);
+  --background-color: var(--background-color-light);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  color: var(--mainTextColor);
+  color: var(--text-black);
   margin: 0;
 }
 
@@ -39,12 +37,12 @@ html {
 }
 
 body {
-  background-color: var(--mainBackgroundColor);
+  background-color: var(--background-color);
 }
 
 a {
   text-decoration: none;
-  color: var(--mainLinkColor);
+  color: var(--text-black);
   font-weight: 500;
 }
 
@@ -65,12 +63,14 @@ img {
 
 /* NAVBAR */
 .navbar {
-  padding: 2rem 0;
+  margin: 2rem 0;
+  z-index: 3;
 }
 
-.nav__container {
+.navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__logo {
@@ -83,14 +83,14 @@ img {
 }
 
 .navbar__letter {
-  color: var(--secondaryTextColor);
+  color: var(--primary-color);
 }
 
 .navbar__links {
   list-style: none;
   padding: 0;
-  display: flex;
   align-items: center;
+  display: none;
 }
 
 .navbar__links-item {
@@ -103,10 +103,11 @@ img {
 
 .navbar__links-item a {
   position: relative;
+  color: var(--text-black);
 }
 
 .navbar__links-item a:hover {
-  color: var(--secondaryTextColor);
+  color: var(--secondary-color);
 }
 
 .navbar__links-item a::before {
@@ -116,10 +117,10 @@ img {
   height: 2px;
   bottom: -10px;
   left: 0;
-  background-color: var(--secondaryTextColor);
+  background-color: var(--secondary-color);
   visibility: hidden;
   transform: scaleX(0);
-  transition: var(--mainTransition);
+  transition: transform 0.3s ease-in-out 0s;
 }
 
 .navbar__links-item a:hover::before {
@@ -127,19 +128,96 @@ img {
   transform: scaleX(1);
 }
 
+/* HAMBURGER MENU */
+.navbar__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navbar__hamburger-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-black);
+  margin-bottom: 4px;
+  transition: transform 0.3s ease-in-out 0s;
+}
+
+.navbar__hamburger--active .navbar__hamburger-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navbar__hamburger--active .navbar__hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger--active .navbar__hamburger-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* MOBILE MENU */
+.mobile__menu {
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mobile__nav {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.mobile__menu--active {
+  transform: translateX(0%);
+}
+
+.mobile__links {
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.mobile__links-item {
+  padding: 2rem 0;
+}
+
+.mobile__links-item a {
+  padding: 2rem 0;
+}
+
+.mobile__links-item:hover {
+  background-color: var(--primary-color);
+}
+
+.mobile__links-item:hover a {
+  color: var(--text-white);
+}
+
 /* HERO SECTION */
 .hero {
-  padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 .hero__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column-reverse;
 }
 
 .hero__intro {
   flex: 1;
+  text-align: center;
 }
 
 .hero__image {
@@ -152,12 +230,9 @@ img {
 }
 
 .hero__title {
-}
-
-.hero__title-name {
+  margin-top: 3rem;
   font-size: 1.5rem;
-  display: inline-block;
-  color: var(--secondaryTextColor);
+  color: var(--secondary-color);
 }
 
 .hero__subtitle {
@@ -173,11 +248,12 @@ img {
 
 /* ABOUT SECTION */
 .about {
-  padding: 6rem 0;
+  margin: 6rem 0;
   line-height: 1.8;
 }
 
 .about__title {
+  color: var(--primary-color);
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 30px;
@@ -202,7 +278,7 @@ img {
   height: 12.5rem;
   margin-right: 1rem;
   border-radius: 50%;
-  border: 2px solid var(--secondaryTextColor);
+  border: 2px solid var(--secondary-color);
   float: left;
 }
 
@@ -216,7 +292,7 @@ img {
 }
 
 .about__paragraph-heading {
-  color: var(--secondaryTextColor);
+  color: var(--secondary-color);
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: capitalize;
@@ -224,10 +300,11 @@ img {
 
 /* WORK SECTION */
 .work {
-  padding: 6rem 0;
+  margin: 6rem 0;
 }
 
 .work__title {
+  color: var(--primary-color);
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 30px;
@@ -244,7 +321,7 @@ img {
 
 .work__item {
   display: flex;
-  border: 2px solid #ff8da7;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -262,17 +339,13 @@ img {
 }
 
 .work__company {
-  font-size: 1.8rem;
-  color: var(--secondaryTextColor);
-}
-
-.work__position {
-  font-size: 1.2rem;
-  margin: 0.2rem 0;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  display: inline;
 }
 
 .work__date {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .work__description {
@@ -285,10 +358,11 @@ img {
 
 /* PROJECTS SECTION */
 .projects {
-  padding: 6rem 0;
+  margin: 6rem 0;
 }
 
 .projects__title {
+  color: var(--primary-color);
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 1.875rem;
@@ -301,7 +375,7 @@ img {
 
 .project {
   flex: 1;
-  border: 1px solid #ccc;
+  border: 2px solid var(--secondary-color);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -331,35 +405,67 @@ img {
 footer {
   text-align: center;
 }
-/* MODIFIER CLASS */
 
+/* MODIFIER CLASS */
 .btn {
   font-weight: bold;
   text-transform: capitalize;
   border-radius: 5px;
-  transition: var(--mainTransition);
+  transition: background-color 0.3s ease-in-out 0s;
 }
 
-.btn--main {
+.btn--primary {
   display: inline-block;
-  color: #fff;
-  background-color: var(--mainButtonBackgroundColor);
+  color: var(--text-white);
+  background-color: var(--primary-button);
   padding: 1rem 2rem;
 }
 
-.btn--main:hover {
-  background-color: #a60027;
+.btn--primary:hover {
+  background-color: var(--primary-color);
 }
 
 .btn--secondary {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   display: inline-block;
-  color: var(--secondaryTextColor);
-  border: 2px solid var(--mainButtonBackgroundColor);
-  background-color: transparent;
-  padding: 1rem 1.625rem;
+  color: var(--text-white);
+  background-color: var(--secondary-button);
+  padding: 0.8rem 1.2rem;
 }
 
 .btn--secondary:hover {
-  background-color: rgba(255, 141, 167, 0.4);
+  background-color: var(--secondary-color);
+}
+
+.body-scroll-lock {
+  overflow: hidden;
+}
+
+/* CSS STYLES TO APPLY WHEN THE SCREEN WIDTH IS GREATER THAN 768PX */
+@media (min-width: 768px) {
+  /* NAVBAR */
+  .navbar__links {
+    display: flex;
+  }
+
+  /* HAMBURGER MENU */
+  .navbar__hamburger {
+    display: none;
+  }
+
+  /* MOBILE MENU */
+  .mobile__menu {
+    transform: translateX(-100%);
+  }
+
+  /* HERO SECTION */
+  .hero__container {
+    flex-direction: row;
+  }
+  .hero__intro {
+    text-align: left;
+  }
+  .hero__title {
+    margin-top: 0;
+  }
 }
