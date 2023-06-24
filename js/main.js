@@ -2,6 +2,7 @@ const navbar = document.querySelector('.navbar');
 const hamburger = navbar.querySelector('.navbar__hamburger');
 const menu = document.querySelector('.mobile__menu');
 const body = document.querySelector('body');
+const scrollToTopButton = document.querySelector('#scrollToTopButton');
 
 function toggleMenu() {
   hamburger.classList.toggle('navbar__hamburger--active');
@@ -13,4 +14,11 @@ menu.addEventListener('click', function (event) {
   if (event.target.matches('.mobile__links a')) {
     toggleMenu();
   }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
