@@ -7,12 +7,12 @@
   --text-black: rgba(0, 0, 0, 1);
 
   --text-white: rgba(255, 255, 255, 1);
-  --text-color: var(--text-white);
+  --text-color: var(--text-black);
   --primary-color: rgba(255, 3, 62, 1);
   --secondary-color: rgba(77, 112, 230, 1);
   --primary-button: rgba(255, 3, 62, 0.8);
   --secondary-button: rgba(77, 112, 230, 0.8);
-  --background-color: var(--background-color-dark);
+  --background-color: var(--background-color-white);
 }
 
 *,
@@ -225,6 +225,7 @@ img {
 }
 
 .hero__subtitle {
+  margin: 1rem 0;
   font-size: 1.125rem;
 }
 
@@ -442,6 +443,10 @@ footer {
   text-align: center;
   font-weight: bold;
   position: relative;
+}
+
+#year {
+  color: var(--text-white);
 }
 
 #scrollToTopButton {

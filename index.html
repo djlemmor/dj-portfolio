@@ -1,432 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>DJ Lemmor Nuique Portfolio</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar__container container">
-        <a href="#" class="navbar__logo">DJ</a>
-        <ul class="navbar__links">
-          <li class="navbar__links-item"><a href="#">Home</a></li>
-          <li class="navbar__links-item"><a href="#about">About</a></li>
-          <li class="navbar__links-item"><a href="#work">Work</a></li>
-          <li class="navbar__links-item"><a href="#projects">Projects</a></li>
-          <li class="navbar__links-item"><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="navbar__hamburger" onclick="toggleMenu()">
-          <span class="navbar__hamburger-line"></span>
-          <span class="navbar__hamburger-line"></span>
-          <span class="navbar__hamburger-line"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>DJ Lemmor Nuique Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__container container">
+      <a href="#" class="navbar__logo">DJ</a>
+      <ul class="navbar__links">
+        <li class="navbar__links-item"><a href="#">Home</a></li>
+        <li class="navbar__links-item"><a href="#about">About</a></li>
+        <li class="navbar__links-item"><a href="#work">Work</a></li>
+        <li class="navbar__links-item"><a href="#projects">Projects</a></li>
+        <li class="navbar__links-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="navbar__hamburger" onclick="toggleMenu()">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAVBAR -->
+  <aside class="mobile__menu text-align">
+    <nav class="mobile__nav">
+      <ul class="mobile__links">
+        <li class="mobile__links-item"><a href="#">Home</a></li>
+        <li class="mobile__links-item"><a href="#about">About</a></li>
+        <li class="mobile__links-item"><a href="#work">Work</a></li>
+        <li class="mobile__links-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="mobile__links-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__intro text-align">
+          <h1 class="hero__title">Hi, I'm DJ Lemmor Nuique</h1>
+          <p class="hero__subtitle">
+            I'm a Software Developer based in the Philippines.
+          </p>
+          <a href="#work" class="hero__button btn btn--primary">View Work History</a>
+        </div>
+        <div class="hero__image">
+          <img src="images/profiles/profile-cartoonize.png" alt="DJ Lemmor Nuique Picture" class="hero__picture" />
         </div>
       </div>
-    </nav>
+    </section>
 
-    <!-- MOBILE NAVBAR -->
-    <aside class="mobile__menu text-align">
-      <nav class="mobile__nav">
-        <ul class="mobile__links">
-          <li class="mobile__links-item"><a href="#">Home</a></li>
-          <li class="mobile__links-item"><a href="#about">About</a></li>
-          <li class="mobile__links-item"><a href="#work">Work</a></li>
-          <li class="mobile__links-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="mobile__links-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- MAIN -->
-    <main>
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__intro text-align">
-            <h1 class="hero__title">Hi, I'm DJ Lemmor Nuique</h1>
-            <p class="hero__subtitle">
-              I'm a Junior Web Developer based in the Philippines.
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="about__title text-align">&lt;ABOUT ME&gt;</h2>
+        <div class="about__container">
+          <div class="about__content">
+            <div class="about__description">
+              <img class="about__image" src="images/profiles/profile.png" alt="DJ Lemmor Nuique" />
+              <p class="about__paragraph">
+                <span class="about__paragraph-heading"> My name </span>is DJ
+                Lemmor Nuique and I'm a Software Developer based in the
+                Philippines. I have a Bachelor's degree in Information
+                Technology from Consolatrix College of Toledo City and I've
+                been working in the industry for over 6 years. During my
+                career, I have gained experience using various web development
+                tools, including Adobe Edge Animate, jQuery, Browser Developer
+                Tools, Visual Studio Code, Git, Npm, Sass, Vue, Vite, Vitest, Angular, Shopify and MongoDB.
+              </p>
+            </div>
+            <p class="about__paragraph">
+              <span class="about__paragraph-heading">My professional goals </span>are to enhance my technical skills,
+              take on more leadership
+              roles, and contribute positively to my organization.
             </p>
-            <a href="#work" class="hero__button btn btn--primary"
-              >View Work History</a
-            >
+            <p class="about__paragraph">
+              <span class="about__paragraph-heading">My hobbies and interests
+              </span>
+              outside of work include swimming, playing online games (DOTA 2,
+              Cabal Online), and reading web novels, manga, and manhwa.
+            </p>
           </div>
-          <div class="hero__image">
-            <img
-              src="images/profiles/profile-cartoonize.png"
-              alt="DJ Lemmor Nuique Picture"
-              class="hero__picture"
-            />
+          <div class="about__details">
+            <p class="about__paragraph">
+              <span class="about__paragraph-heading">I'm motivated </span>by a
+              desire to create meaningful websites and applications that are
+              functional, user-friendly, and improve the experience and
+              quality of life of the users. I value collaboration, innovation,
+              and continuous learning.
+            </p>
+            <p class="about__paragraph">
+              <span class="about__paragraph-heading">My achievement </span>
+              that I can be proud of is passing the Level 1: Information
+              Technology Passport (IP) Certification Exam organized by
+              Philnits Society.
+            </p>
+            <p class="about__paragraph">
+              <span class="about__paragraph-heading">Some of my favorite YouTubers
+              </span>
+              on web development include Traversy Media, Kevin Powell, The Net
+              Ninja, and Dani Krossing.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ABOUT SECTION -->
-      <section id="about" class="about">
-        <div class="container">
-          <h2 class="about__title text-align">&lt;ABOUT ME&gt;</h2>
-          <div class="about__container">
-            <div class="about__content">
-              <div class="about__description">
-                <img
-                  class="about__image"
-                  src="images/profiles/profile.png"
-                  alt="DJ Lemmor Nuique"
-                />
-                <p class="about__paragraph">
-                  <span class="about__paragraph-heading"> My name </span>is DJ
-                  Lemmor Nuique and I'm a Junior Web Developer based in the
-                  Philippines. I have a Bachelor's degree in Information
-                  Technology from Consolatrix College of Toledo City and I've
-                  been working in the industry for over 5 years. During my
-                  career, I have gained experience using various web development
-                  tools, including Adobe Edge Animate, jQuery, Browser Developer
-                  Tools, Visual Studio Code, Git, Npm, Sass, Vue, Vite, and
-                  Vitest.
+    <!-- WORK SECTION -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="work__container">
+          <h2 class="work__title text-align">&lt;WORK HISTORY&gt;</h2>
+          <div class="work__list">
+            <div class="work__item">
+              <img class="work__image" src="images/works/pv-mutimedia.png" alt="PV Multimedia" />
+              <div class="work__info">
+                <div>
+                  <h3 class="work__company">
+                    PV Multimedia |
+                    <span class="work__position">HTML5 Developer</span>
+                  </h3>
+                </div>
+                <h4 class="work__date">September 2017 - July 2021</h4>
+                <p class="work__description">
+                  As part of my role, I was responsible for designing, action
+                  scripting, and developing E-Learning modules using Adobe
+                  Edge Animate. I closely followed instructions provided by
+                  the President, which could be in the form of words, codes,
+                  or schemes. Additionally, I converted existing flash files
+                  and storyboards from Excel into HTML5 using the Adobe Edge
+                  Application with Javascript. Throughout the process, I
+                  ensured that the workflow and output adhered to the
+                  standards set by the President. Furthermore, I actively
+                  integrated creative ideas to enhance the overall quality and
+                  effectiveness of the E-Learning modules.
                 </p>
+                <a class="work__link btn btn--secondary" href="http://www.present-value-training.com/en4/index.php"
+                  target="_blank" rel="noopener noreferrer">Visit Website</a>
               </div>
-              <p class="about__paragraph">
-                <span class="about__paragraph-heading"
-                  >My professional goals </span
-                >are to enhance my technical skills, take on more leadership
-                roles, and contribute positively to my organization.
-              </p>
-              <p class="about__paragraph">
-                <span class="about__paragraph-heading"
-                  >My hobbies and interests
-                </span>
-                outside of work include swimming, playing online games (DOTA 2,
-                Cabal Online), and reading web novels, manga, and manhwa.
-              </p>
             </div>
-            <div class="about__details">
-              <p class="about__paragraph">
-                <span class="about__paragraph-heading">I'm motivated </span>by a
-                desire to create meaningful websites and applications that are
-                functional, user-friendly, and improve the experience and
-                quality of life of the users. I value collaboration, innovation,
-                and continuous learning.
-              </p>
-              <p class="about__paragraph">
-                <span class="about__paragraph-heading">My achievement </span>
-                that I can be proud of is passing the Level 1: Information
-                Technology Passport (IP) Certification Exam organized by
-                Philnits Society.
-              </p>
-              <p class="about__paragraph">
-                <span class="about__paragraph-heading"
-                  >Some of my favorite YouTubers
-                </span>
-                on web development include Traversy Media, Kevin Powell, The Net
-                Ninja, and Dani Krossing.
-              </p>
+            <div class="work__item">
+              <img class="work__image" src="images/works/jintelcare.png" alt="PV Multimedia" />
+              <div class="work__info">
+                <div>
+                  <h3 class="work__company">
+                    Jintelcare |
+                    <span class="work__position">Junior PHP Developer</span>
+                  </h3>
+                </div>
+                <h4 class="work__date">July 2021 - August 2022</h4>
+
+                <p class="work__description">
+                  I have been involved in various projects that encompass
+                  different aspects of web development. In the first project,
+                  I took over and maintained an existing live website built
+                  with the Codeigniter 3 framework. Throughout this role, I
+                  implemented numerous enhancements to meet the specific needs
+                  and goals of the client. In the second project, I played a
+                  significant role in creating the admin dashboard, utilizing
+                  Vue.js on the frontend and Laravel on the backend. In the
+                  third project, I participated in the creation of both the
+                  marketplace and the admin dashboard for a website based on a
+                  Figma design. Vue.js and Element Plus (a Vue 3-based
+                  component library) were utilized in this project to bring
+                  the design to life.
+                </p>
+                <a class="work__link btn btn--secondary" href="https://jintelcare.com/me/" target="_blank"
+                  rel="noopener noreferrer">Visit Website</a>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WORK SECTION -->
-      <section id="work" class="work">
-        <div class="container">
-          <div class="work__container">
-            <h2 class="work__title text-align">&lt;WORK HISTORY&gt;</h2>
-            <div class="work__list">
-              <div class="work__item">
-                <img
-                  class="work__image"
-                  src="images/works/pv-mutimedia.png"
-                  alt="PV Multimedia"
-                />
-                <div class="work__info">
-                  <div>
-                    <h3 class="work__company">
-                      PV Multimedia |
-                      <span class="work__position">HTML5 Developer</span>
-                    </h3>
-                  </div>
-                  <h4 class="work__date">September 2017 - July 2021</h4>
-                  <p class="work__description">
-                    As part of my role, I was responsible for designing, action
-                    scripting, and developing E-Learning modules using Adobe
-                    Edge Animate. I closely followed instructions provided by
-                    the President, which could be in the form of words, codes,
-                    or schemes. Additionally, I converted existing flash files
-                    and storyboards from Excel into HTML5 using the Adobe Edge
-                    Application with Javascript. Throughout the process, I
-                    ensured that the workflow and output adhered to the
-                    standards set by the President. Furthermore, I actively
-                    integrated creative ideas to enhance the overall quality and
-                    effectiveness of the E-Learning modules.
-                  </p>
-                  <a
-                    class="work__link btn btn--secondary"
-                    href="http://www.present-value-training.com/en4/index.php"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Visit Website</a
-                  >
+            <div class="work__item">
+              <img class="work__image" src="images/works/vst-ecs.png" alt="VST ECS" />
+              <div class="work__info">
+                <div>
+                  <h3 class="work__company">
+                    VST ECS Phils. Inc. |
+                    <span class="work__position">Application Developer</span>
+                  </h3>
                 </div>
+                <h4 class="work__date">September 2022 - January 2023</h4>
+
+                <p class="work__description">
+                  I was responsible for developing a microservice architecture
+                  by creating an API using the Laravel framework. This
+                  involved implementing CRUD (Create, Read, Update, Delete)
+                  operations to interact with both MSSQL and Oracle databases.
+                  I successfully designed and built the API endpoints,
+                  allowing seamless data manipulation and retrieval from these
+                  databases. Throughout the project, I ensured the proper
+                  handling of database connections, query execution, and error
+                  handling.
+                </p>
+                <a class="work__link btn btn--secondary" href="https://www.vstecs.com.ph/" target="_blank"
+                  rel="noopener noreferrer">Visit Website</a>
               </div>
-              <div class="work__item">
-                <img
-                  class="work__image"
-                  src="images/works/jintelcare.png"
-                  alt="PV Multimedia"
-                />
-                <div class="work__info">
-                  <div>
-                    <h3 class="work__company">
-                      Jintelcare |
-                      <span class="work__position">Junior PHP Developer</span>
-                    </h3>
-                  </div>
-                  <h4 class="work__date">July 2021 - August 2022</h4>
-
-                  <p class="work__description">
-                    I have been involved in various projects that encompass
-                    different aspects of web development. In the first project,
-                    I took over and maintained an existing live website built
-                    with the Codeigniter 3 framework. Throughout this role, I
-                    implemented numerous enhancements to meet the specific needs
-                    and goals of the client. In the second project, I played a
-                    significant role in creating the admin dashboard, utilizing
-                    Vue.js on the frontend and Laravel on the backend. In the
-                    third project, I participated in the creation of both the
-                    marketplace and the admin dashboard for a website based on a
-                    Figma design. Vue.js and Element Plus (a Vue 3-based
-                    component library) were utilized in this project to bring
-                    the design to life.
-                  </p>
-                  <a
-                    class="work__link btn btn--secondary"
-                    href="https://jintelcare.com/me/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Visit Website</a
-                  >
+            </div>
+            <div class="work__item">
+              <img class="work__image" src="images/works/vdw.png" alt="Vernasche Die Welt" />
+              <div class="work__info">
+                <div>
+                  <h3 class="work__company">
+                    Vernasche Die Welt |
+                    <span class="work__position">Software Developer</span>
+                  </h3>
                 </div>
-              </div>
-              <div class="work__item">
-                <img
-                  class="work__image"
-                  src="images/works/vst-ecs.png"
-                  alt="VST ECS"
-                />
-                <div class="work__info">
-                  <div>
-                    <h3 class="work__company">
-                      VST ECS Phils. Inc. |
-                      <span class="work__position">Application Developer</span>
-                    </h3>
-                  </div>
-                  <h4 class="work__date">September 2022 - January 2023</h4>
+                <h4 class="work__date">May 2023 - Present</h4>
 
-                  <p class="work__description">
-                    I was responsible for developing a microservice architecture
-                    by creating an API using the Laravel framework. This
-                    involved implementing CRUD (Create, Read, Update, Delete)
-                    operations to interact with both MSSQL and Oracle databases.
-                    I successfully designed and built the API endpoints,
-                    allowing seamless data manipulation and retrieval from these
-                    databases. Throughout the project, I ensured the proper
-                    handling of database connections, query execution, and error
-                    handling.
-                  </p>
-                  <a
-                    class="work__link btn btn--secondary"
-                    href="https://www.vstecs.com.ph/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Visit Website</a
-                  >
-                </div>
+                <p class="work__description">
+                  Collaborated closely with the development team to identify and address bugs within the existing web
+                  applications,
+                  fostering a seamless user experience.
+                  Implemented innovative features in alignment with the team leader's specifications, actively
+                  contributing to the
+                  achievement of broader project goals and milestones.
+                  Actively participated in regular code review sessions, ensuring the maintenance of optimal code
+                  quality and strict
+                  adherence to industry best practices for robust and efficient web development.
+                  Demonstrated a commitment to continuous learning and improvement, adapting to evolving technologies
+                  and methodologies
+                  within the dynamic web development landscape.
+                  Engaged in open communication and knowledge sharing within the team, fostering a collaborative
+                  environment that promoted
+                  efficient problem-solving and the exchange of valuable insights.
+                </p>
+                <a class="work__link btn btn--secondary" href="https://www.vernaschediewelt.com/" target="_blank"
+                  rel="noopener noreferrer">Visit Website</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PROJECTS SECTION -->
-      <section id="projects" class="projects">
-        <div class="container">
-          <h2 class="projects__title text-align">&lt;PROJECTS&gt;</h2>
-          <div class="project__container">
-            <div class="projects__list">
-              <div class="project">
-                <img
-                  class="project__image"
-                  src="images/projects/dj-music.png"
-                  alt="DJ Music"
-                />
-                <div class="project__info">
-                  <h3 class="project__name">DJmusic</h3>
-                  <p class="project__description">
-                    A Project from Udemy Course - Complete Vue Developer 2023:
-                    Zero to Mastery (Pinia, Vitest)
-                  </p>
-                  <a
-                    class="project__link btn btn--secondary"
-                    href="https://djmusic.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View Project</a
-                  >
-                </div>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="projects__title text-align">&lt;PROJECTS&gt;</h2>
+        <div class="project__container">
+          <div class="projects__list">
+            <div class="project">
+              <img class="project__image" src="images/projects/dj-music.png" alt="DJ Music" />
+              <div class="project__info">
+                <h3 class="project__name">DJmusic</h3>
+                <p class="project__description">
+                  A Project from Udemy Course - Complete Vue Developer 2023:
+                  Zero to Mastery (Pinia, Vitest)
+                </p>
+                <a class="project__link btn btn--secondary" href="https://djmusic.vercel.app/" target="_blank"
+                  rel="noopener noreferrer">View Project</a>
               </div>
-              <div class="project">
-                <img
-                  class="project__image"
-                  src="images/projects/dj-module.png"
-                  alt="DJ Module"
-                />
-                <div class="project__info">
-                  <h3 class="project__name">DJmodule</h3>
-                  <p class="project__description">
-                    A module-based website that is similar to the one I
-                    developed during my time at PV Multimedia as an HTML5
-                    Developer.
-                  </p>
-                  <a
-                    class="project__link btn btn--secondary"
-                    href="https://djlemmor.github.io/dj-module/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View Project</a
-                  >
-                </div>
+            </div>
+            <div class="project">
+              <img class="project__image" src="images/projects/dj-module.png" alt="DJ Module" />
+              <div class="project__info">
+                <h3 class="project__name">DJmodule</h3>
+                <p class="project__description">
+                  A module-based website that is similar to the one I
+                  developed during my time at PV Multimedia as an HTML5
+                  Developer.
+                </p>
+                <a class="project__link btn btn--secondary" href="https://djlemmor.github.io/dj-module/" target="_blank"
+                  rel="noopener noreferrer">View Project</a>
               </div>
-              <!-- Add more project items as needed -->
+            </div>
+            <!-- Add more project items as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTANCT SECTION -->
+    <section id="contact" class="contact text-align">
+      <div class="container">
+        <h2 class="contact__title">&lt;CONTACT&gt;</h2>
+        <div class="contact__container">
+          <div class="contact__info">
+            <div class="contact__item">
+              <a href="mailto:lemmornuique@gmail.com" class="contact__link">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                  <path
+                    d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z" />
+                </svg>
+                lemmornuique@gmail.com
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="tel:+639951013367" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contact__icon" viewBox="0 0 24 24">
+                  <path
+                    d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z" />
+                </svg>
+                +63-995-101-3367
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="https://djlemmor.github.io/resume-website/" target="_blank" rel="noopener noreferrer"
+                class="contact__link">
+                <svg class="contact__icon" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                  <path
+                    d="M22 0h-20v24h14l6-6v-18zm-6 18h4.36l-4.36 4.385v-4.385zm-3 1h-8v1h8v-1zm0-3h-8v1h8v-1zm6-2v-1h-14v1h14zm-7.059-4.968c-1.147-.265-2.214-.497-1.697-1.473 1.573-2.97.417-4.559-1.244-4.559-1.694 0-2.821 1.65-1.244 4.559.532.982-.575 1.214-1.697 1.473-1.024.237-1.062.745-1.059 1.635l.001.333h7.997l.001-.323c.004-.896-.03-1.407-1.058-1.645zm7.059.968h-4v1h4v-1zm0-2v-1h-4v1h4zm0-4h-4v1h4v-1z" />
+                </svg>
+                Resume
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="https://github.com/djlemmor" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contact__icon" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="https://www.linkedin.com/in/dj-lemmor-nuique-666326248/" target="_blank"
+                rel="noopener noreferrer" class="contact__link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="contact__icon" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+                LinkedIn</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <!-- CONTANCT SECTION -->
-      <section id="contact" class="contact text-align">
-        <div class="container">
-          <h2 class="contact__title">&lt;CONTACT&gt;</h2>
-          <div class="contact__container">
-            <div class="contact__info">
-              <div class="contact__item">
-                <a href="mailto:lemmornuique@gmail.com" class="contact__link">
-                  <svg
-                    class="contact__icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  >
-                    <path
-                      d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"
-                    />
-                  </svg>
-                  lemmornuique@gmail.com
-                </a>
-              </div>
-              <div class="contact__item">
-                <a href="tel:+639951013367" class="contact__link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="contact__icon"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z"
-                    />
-                  </svg>
-                  +63-995-101-3367
-                </a>
-              </div>
-              <div class="contact__item">
-                <a
-                  href="https://djlemmor.github.io/resume-website/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__link"
-                >
-                  <svg
-                    class="contact__icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  >
-                    <path
-                      d="M22 0h-20v24h14l6-6v-18zm-6 18h4.36l-4.36 4.385v-4.385zm-3 1h-8v1h8v-1zm0-3h-8v1h8v-1zm6-2v-1h-14v1h14zm-7.059-4.968c-1.147-.265-2.214-.497-1.697-1.473 1.573-2.97.417-4.559-1.244-4.559-1.694 0-2.821 1.65-1.244 4.559.532.982-.575 1.214-1.697 1.473-1.024.237-1.062.745-1.059 1.635l.001.333h7.997l.001-.323c.004-.896-.03-1.407-1.058-1.645zm7.059.968h-4v1h4v-1zm0-2v-1h-4v1h4zm0-4h-4v1h4v-1z"
-                    />
-                  </svg>
-                  Resume
-                </a>
-              </div>
-              <div class="contact__item">
-                <a
-                  href="https://github.com/djlemmor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__link"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="contact__icon"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-              <div class="contact__item">
-                <a
-                  href="https://www.linkedin.com/in/dj-lemmor-nuique-666326248/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__link"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="contact__icon"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                  LinkedIn</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+  <!-- FOOTER -->
+  <footer>
+    &copy;<span id="year">year</span> DJ LEMMOR NUIQUE
+    <button id="scrollToTopButton" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+        stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M16 12l-4-4-4 4M12 16V9" />
+      </svg>
+    </button>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 
-    <!-- FOOTER -->
-    <footer>
-      &copy;2023 DJ LEMMOR NUIQUE
-      <button id="scrollToTopButton" title="Go to top">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#ffffff"
-          stroke-width="2"
-          stroke-linecap="square"
-          stroke-linejoin="arcs"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M16 12l-4-4-4 4M12 16V9" />
-        </svg>
-      </button>
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
 </html>
